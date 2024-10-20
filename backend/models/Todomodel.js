@@ -1,23 +1,27 @@
 const mongoose = require('mongoose')
 
 const todoSchema = new mongoose.Schema({
-    assignto:{
+    id:{
         type:String,
         require:true
     }, 
-status:{
+    title:{
      type:String,
     require:true
 },
- duedate:{
+description:{
      type:Date,
     require:true
 },
- priority:{
+price:{
      type:String,
     require:true
 },
- description:{
+category:{
+    type:String,
+     require:true
+ },
+ sold:{
     type:String,
      require:true
  }
